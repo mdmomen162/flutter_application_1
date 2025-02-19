@@ -47,53 +47,21 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         body: Container(
           height: double.infinity,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children:
-             [
-              Icon(
-                Icons.star,
-                size: 60,
-                color: Colors.yellow,
-              ),
-              Image(
-                image: AssetImage('asstes/images/juta.png'),
-                height: 120,
-                width: 100,
-              ),
-              Icon(
-                Icons.star,
-                size: 60,
-                color: Colors.grey,
-              ),
-            
-              Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.center,
-                children:
-                
-                 [
-                  Icon(
-                    Icons.star,
-                    size: 60,
-                    color: Colors.blue,
-              ),
-              Icon(
-                    Icons.star,
-                    size: 60,
-                    color: Colors.blue,
-              ),
-              Icon(
-                    Icons.star,
-                    size: 60,
-                    color: Colors.blue,
-              ),
-                ],
-              )
+          child: SingleChildScrollView(
+            scrollDirection: Axis.vertical,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.end,
              
-            ],
-            
+              children:List.generate(
+                100,
+                (index)=>Icon(
+                  Icons.radar,
+                  color:Colors.blue,
+                  size:index.toDouble(),
+                )
+              )
+            ),
           ),
         ));
   }
