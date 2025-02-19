@@ -50,7 +50,8 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
+            children:
+             [
               Icon(
                 Icons.star,
                 size: 60,
@@ -66,11 +67,33 @@ class _MyHomePageState extends State<MyHomePage> {
                 size: 60,
                 color: Colors.grey,
               ),
-             
-             
-             
+            
+              Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                children:
+                
+                 [
+                  Icon(
+                    Icons.star,
+                    size: 60,
+                    color: Colors.blue,
+              ),
+              Icon(
+                    Icons.star,
+                    size: 60,
+                    color: Colors.blue,
+              ),
+              Icon(
+                    Icons.star,
+                    size: 60,
+                    color: Colors.blue,
+              ),
+                ],
+              )
              
             ],
+            
           ),
         ));
   }
