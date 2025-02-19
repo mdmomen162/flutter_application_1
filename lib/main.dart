@@ -45,34 +45,33 @@ class _MyHomePageState extends State<MyHomePage> {
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
           title: Text(widget.title),
         ),
-        body: Row(
-          children: [
-            Icon(
-              Icons.star,
-              size: 60,
-              color: Colors.yellow,
-            ),
-            Icon(
-              Icons.star,
-              size: 60,
-              color: Colors.yellow,
-            ),
-            Icon(
-              Icons.star,
-              size: 60,
-              color: Colors.grey,
-            ),
-            Icon(
-              Icons.star,
-              size: 60,
-              color: Colors.grey,
-            ),
-            Icon(
-              Icons.star,
-              size: 60,
-              color: Colors.grey,
-            ),
-          ],
+        body: Container(
+          height: double.infinity,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.star,
+                size: 60,
+                color: Colors.yellow,
+              ),
+              Image(
+                image: AssetImage('asstes/images/juta.png'),
+                height: 120,
+                width: 100,
+              ),
+              Icon(
+                Icons.star,
+                size: 60,
+                color: Colors.grey,
+              ),
+             
+             
+             
+             
+            ],
+          ),
         ));
   }
 }
