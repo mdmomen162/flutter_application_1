@@ -41,25 +41,38 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(widget.title),
-      ),
-      body:Row(
-        children: [
-          Icon(
-            Icons.memory,
-            size: 60,
-            color: Colors.red,
-          ),
-          Text(
-            "Flutter Row",
-            style: TextStyle(
-              color: Colors.blue,
-              fontSize: 40,
-            )
-          )
-        ],)
-    );
+        appBar: AppBar(
+          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+          title: Text(widget.title),
+        ),
+        body: Row(
+          children: [
+            Icon(
+              Icons.star,
+              size: 60,
+              color: Colors.yellow,
+            ),
+            Icon(
+              Icons.star,
+              size: 60,
+              color: Colors.yellow,
+            ),
+            Icon(
+              Icons.star,
+              size: 60,
+              color: Colors.grey,
+            ),
+            Icon(
+              Icons.star,
+              size: 60,
+              color: Colors.grey,
+            ),
+            Icon(
+              Icons.star,
+              size: 60,
+              color: Colors.grey,
+            ),
+          ],
+        ));
   }
 }
