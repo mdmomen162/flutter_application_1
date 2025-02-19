@@ -46,23 +46,31 @@ class _MyHomePageState extends State<MyHomePage> {
           title: Text(widget.title),
         ),
         body: Container(
-          height: double.infinity,
-          child: SingleChildScrollView(
-            scrollDirection: Axis.vertical,
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              crossAxisAlignment: CrossAxisAlignment.end,
-             
-              children:List.generate(
-                100,
-                (index)=>Icon(
-                  Icons.radar,
-                  color:Colors.blue,
-                  size:index.toDouble(),
-                )
-              )
-            ),
+          padding: EdgeInsets.all(10),
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(10),
           ),
-        ));
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  Container(
+                    child: Text('50% OFF'),
+                  ),
+                  Icon(Icons.favorite_border),
+                ],
+            ),
+            Image(image: AssetImage('asstes/images/juta.png')),
+            Text('Apple Watch - series 6'),
+            Row(
+              children: [
+                
+              ],
+            )
+          ],),
+        )
+        );
   }
 }
